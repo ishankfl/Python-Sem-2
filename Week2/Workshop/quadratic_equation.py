@@ -1,3 +1,5 @@
+# Write a program that asks the user to enter the coefficients a,b and c of a quadratic equation ax 2 + bx + c = 0. The program should find out the values of x which are the solutions to the quadratic equation using the formula:
+
 # Expansion of (x + y)^3
 x = int(input("Enter the value of x: "))
 y = int(input("Enter the value of y: "))
