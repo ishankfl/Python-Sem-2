@@ -1,12 +1,9 @@
-number = 10
+N = int(input("Enter a number: "))
 
-if number <= 1:
-    print ([1])
-
+if N ==2:
+    print([1,1])
 else:
-    next_number = 1
-    fibonacci_series = [1,1]
-    while fibonacci_series[-1] + fibonacci_series[-2] < number:
-        next_number = fibonacci_series[-1] + fibonacci_series[-2]
-        fibonacci_series.append(next_number)
-    print(fibonacci_series)
+    fib_series = [1,1]
+    for i in range(N-2):
+        fib_series.append(fib_series[-1]+fib_series[-2])
+print(fib_series)
