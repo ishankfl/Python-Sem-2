@@ -17,14 +17,11 @@ print("Sorted Unique List (Descending):", list_)
 # Sorting Another List in Descending Order
 # =============================================
 
-# Given list with duplicates
 items = [1, 2, 4, 3, 2, 1, 5, 6]
 
-# Bubble Sort Algorithm to sort in descending order
-for i in range(len(items)):  # Outer loop for passes
-    for j in range(0, len(items) - i - 1):  # Inner loop for swapping
-        if items[j] < items[j + 1]:  # Swap if next element is larger
+for i in range(len(items)):  
+    for j in range(0, len(items) - i - 1): 
+        if items[j] <  items[j + 1]: 
             items[j], items[j + 1] = items[j + 1], items[j]
 
-# Print the sorted list in descending order
 print("Sorted Items (Descending):", items)
